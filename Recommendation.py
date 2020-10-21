@@ -25,7 +25,7 @@ tmdb.api_key = '281825c11d7e66ad7a6a8fb94fa92276'
 
 
 
-df = pd.read_excel("main_data.xlsx")
+df = pd.read_csv("main_data.csv")
 cv = CountVectorizer()
 count_matrix = cv.fit_transform(df['comb'])
 similarity = cosine_similarity(count_matrix)
