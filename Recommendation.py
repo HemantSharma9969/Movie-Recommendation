@@ -21,12 +21,12 @@ tmdb = TMDb()
 tmdb.api_key = '281825c11d7e66ad7a6a8fb94fa92276'
 
 
-STOP_WORDS= stopwords.words('english')
+
 
 
 
 df = pd.read_csv("main_data.csv")
-cv = CountVectorizer(stop_words=STOP_WORDS)
+cv = CountVectorizer()
 count_matrix = cv.fit_transform(df['comb'])
 similarity = cosine_similarity(count_matrix)
 
