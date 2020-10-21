@@ -25,7 +25,7 @@ STOP_WORDS= stopwords.words('english')
 
 
 
-df = pd.read_csv("C:\\Users\\Hemant\\Desktop\\Projects\\Recomeend\\AJAX-Movie-Recommendation-System-with-Sentiment-Analysis-master\\main_data.csv")
+df = pd.read_csv("main_data.csv")
 cv = CountVectorizer(stop_words=STOP_WORDS)
 count_matrix = cv.fit_transform(df['comb'])
 similarity = cosine_similarity(count_matrix)
