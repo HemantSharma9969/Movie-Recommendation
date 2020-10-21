@@ -116,16 +116,8 @@ def result():
     
     
 
-page_bg_img = '''
-<style>
-body {
-background-image: url("https://hookagency.com/wp-content/uploads/2015/11/light-blue-gradient-ui-gradient.jpg");
-background-size: cover;
-}
-</style>
-'''
 
-st.markdown(page_bg_img, unsafe_allow_html=True)
+
 
 st.title("Movie Recommendation System")
 
