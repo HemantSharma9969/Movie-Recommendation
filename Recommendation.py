@@ -141,7 +141,7 @@ if m:
     s = dict(sorted(q.items(), key=lambda x: x[1],reverse=True)[0:5])
     s = list(s.keys())
     placeholder = st.empty()
-    placeholder.write("Just to make sure there isn't any Spelling Mistake. Please select your movie name from side bar")
+    placeholder.markdown('''Just to make sure there isn't any Spelling Mistake. Click on the **">"** sign on top left and choose your movie.''')
     b1 = st.sidebar.button(s[0].capitalize(), key="1")
     b2 = st.sidebar.button(s[1].capitalize(), key="2")
     b3 = st.sidebar.button(s[2].capitalize(), key="3")
