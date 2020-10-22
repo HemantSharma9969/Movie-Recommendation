@@ -9,3 +9,4 @@ fuzzywuzzy>= 0.18.0
 tmdbv3api==1.6.1
 jsonschema==3.2.0
 streamlit>= 0.69.2
+pickleshare==0.7.5
